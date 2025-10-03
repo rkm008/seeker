@@ -132,6 +132,7 @@ sys.stderr = sys.__stderr__
 
 
 def banner():
+    os.system('clear')
     with open(META_FILE, 'r') as metadata:
         json_data = loads(metadata.read())
         twitter_url = json_data['twitter']
